@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "952327081522",
+    "project_id": "gharbas-db",
+    "storage_bucket": "gharbas-db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952327081522:android:91b02b97fab1ed6d09762b",
+        "android_client_info": {
+          "package_name": "com.example.gharbas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvv3-UFy8-nA5CtboRmczybdSB5APcQIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
