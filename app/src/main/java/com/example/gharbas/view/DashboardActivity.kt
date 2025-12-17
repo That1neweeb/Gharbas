@@ -63,7 +63,7 @@ fun DashboardBody(){
                     }
                     IconButton(onClick = {}) {
                         Icon(
-                            painter = painterResource(R.drawable.outline_notifications_24),
+                            painter = painterResource(R.drawable.baseline_dehaze_24),
                             contentDescription = null
                         )
                     }

@@ -3,6 +3,7 @@ package com.example.gharbas.view
 import android.app.Activity
 import android.app.DatePickerDialog
 import android.content.Context
+import android.content.Intent
 import android.icu.util.Calendar
 import android.os.Bundle
 import android.widget.Toast
@@ -310,6 +311,11 @@ fun  RegisterBody(){
                                         success, message ->
                                     if(success) {
                                         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+                                        val intent = Intent(
+                                            context,
+                                            LoginScreen::class.java
+                                        )
+                                        context.startActivity(intent)
                                         activity.finish()
                                     } else {
                                         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()

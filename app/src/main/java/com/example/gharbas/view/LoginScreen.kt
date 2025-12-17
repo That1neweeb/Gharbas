@@ -226,7 +226,16 @@ Scaffold{
                         .height(height = 60.dp)
                         .width(width = 375.dp)
                 ) {
-                    Text(text = "Log In", style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 20.sp), color = Color.White,)
+                    Text(text = "Log In", style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 20.sp), color = Color.White,
+                        modifier = Modifier.clickable{
+                            val intent = Intent(
+                                context,
+                                DashboardActivity::class.java
+                            )
+                            context.startActivity(intent)
+                            activity.finish()
+                        }
+                    )
                 }
             }
             //Sign Up section
