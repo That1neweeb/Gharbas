@@ -195,6 +195,7 @@ Scaffold{
                 ),
                 modifier = Modifier.fillMaxWidth()
                     .padding(end = 20.dp)
+                    .clickable(onClick = {})
             )
         }
 
@@ -205,9 +206,9 @@ Scaffold{
                         UserViewModel.login(email, password) {
                                 success, message ->
                             if(success) {
-//                                val intent = Intent(context, DashboardActivity::class.java  )
-//                                context.startActivity(intent)
-//                                activity.finish()
+                                val intent = Intent(context, DashboardActivity::class.java  )
+                                context.startActivity(intent)
+                                activity.finish()
                                 Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show()
                             } else {
                                 Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
@@ -227,14 +228,14 @@ Scaffold{
                         .width(width = 375.dp)
                 ) {
                     Text(text = "Log In", style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 20.sp), color = Color.White,
-                        modifier = Modifier.clickable{
-                            val intent = Intent(
-                                context,
-                                DashboardActivity::class.java
-                            )
-                            context.startActivity(intent)
-                            activity.finish()
-                        }
+//                        modifier = Modifier.clickable{
+//                            val intent = Intent(
+//                                context,
+//                                DashboardActivity::class.java
+//                            )
+//                            context.startActivity(intent)
+//                            activity.finish()
+//                        }
                     )
                 }
             }
